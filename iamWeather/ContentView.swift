@@ -8,16 +8,20 @@
 import SwiftUI
 
 
+
+
 struct ContentView: View {
     
     var _center: Center
+    var _upClass = upClass(item: "none")
+
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text(_center.item)
+            Text(_upClass.getItem())
                 .id("txtOne")
             
             Button("Execute") {

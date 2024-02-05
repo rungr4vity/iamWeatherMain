@@ -12,7 +12,25 @@
 		B7B715732B2E607C001BAE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B715722B2E607C001BAE25 /* Assets.xcassets */; };
 		B7B715762B2E607C001BAE25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B715752B2E607C001BAE25 /* Preview Assets.xcassets */; };
 		B7BE2C482B7179E70066FA60 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BE2C472B7179E70066FA60 /* Center.swift */; };
+		B7BE2C792B719D060066FA60 /* upClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BE2C782B719D060066FA60 /* upClass.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7BE2C722B7199480066FA60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7BE2C6D2B7199470066FA60 /* ilwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7BE2C532B7199470066FA60;
+			remoteInfo = ilwork;
+		};
+		B7BE2C742B7199480066FA60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7BE2C6D2B7199470066FA60 /* ilwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7BE2C5D2B7199470066FA60;
+			remoteInfo = ilworkTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B7B7156B2B2E607B001BAE25 /* iamWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iamWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +39,8 @@
 		B7B715722B2E607C001BAE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7B715752B2E607C001BAE25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7BE2C472B7179E70066FA60 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
+		B7BE2C6D2B7199470066FA60 /* ilwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ilwork.xcodeproj; path = ../ilwork/ilwork.xcodeproj; sourceTree = "<group>"; };
+		B7BE2C782B719D060066FA60 /* upClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,7 @@
 		B7B715622B2E607B001BAE25 = {
 			isa = PBXGroup;
 			children = (
+				B7BE2C6D2B7199470066FA60 /* ilwork.xcodeproj */,
 				B7B7156D2B2E607B001BAE25 /* iamWeather */,
 				B7B7156C2B2E607B001BAE25 /* Products */,
 			);
@@ -98,8 +119,18 @@
 			isa = PBXGroup;
 			children = (
 				B7BE2C472B7179E70066FA60 /* Center.swift */,
+				B7BE2C782B719D060066FA60 /* upClass.swift */,
 			);
 			path = Clases;
+			sourceTree = "<group>";
+		};
+		B7BE2C6E2B7199470066FA60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7BE2C732B7199480066FA60 /* ilwork.framework */,
+				B7BE2C752B7199480066FA60 /* ilworkTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +179,35 @@
 			mainGroup = B7B715622B2E607B001BAE25;
 			productRefGroup = B7B7156C2B2E607B001BAE25 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B7BE2C6E2B7199470066FA60 /* Products */;
+					ProjectRef = B7BE2C6D2B7199470066FA60 /* ilwork.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B7B7156A2B2E607B001BAE25 /* iamWeather */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B7BE2C732B7199480066FA60 /* ilwork.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ilwork.framework;
+			remoteRef = B7BE2C722B7199480066FA60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7BE2C752B7199480066FA60 /* ilworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ilworkTests.xctest;
+			remoteRef = B7BE2C742B7199480066FA60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B7B715692B2E607B001BAE25 /* Resources */ = {
@@ -175,6 +229,7 @@
 				B7B715712B2E607B001BAE25 /* ContentView.swift in Sources */,
 				B7BE2C482B7179E70066FA60 /* Center.swift in Sources */,
 				B7B7156F2B2E607B001BAE25 /* iamWeatherApp.swift in Sources */,
+				B7BE2C792B719D060066FA60 /* upClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

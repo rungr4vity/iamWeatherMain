@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+class upClass:Center {
+    
+    override func getItem() ->  String {
+        
+        return "override"
+    }
+
+
+}

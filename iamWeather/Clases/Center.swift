@@ -7,15 +7,17 @@
 
 import Foundation
 
-final class Center {
+class Center {
     
     var item: String
-    
-    
     
     init(item: String) {
         self.item = item
     }
     
+    
+    func getItem() -> String {
+        return self.item
+    }
     
 }
