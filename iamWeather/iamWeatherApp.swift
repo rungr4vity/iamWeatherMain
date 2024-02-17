@@ -11,7 +11,7 @@ import SwiftUI
 struct iamWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(_center: Center(item: "my first item"))
+            ContentView()
         }
     }
 }

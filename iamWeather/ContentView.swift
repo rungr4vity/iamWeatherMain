@@ -12,8 +12,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var _center: Center
-    var _upClass = upClass(item: "none")
 
     
     var body: some View {
@@ -21,14 +19,11 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text(_upClass.getItem())
+            Text("OK")
                 .id("txtOne")
             
             Button("Execute") {
-                
-                _center.item = "from the button"
-                
-                print(_center.item)
+
             }
             .padding()
             
@@ -38,5 +33,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(_center: Center(item: "my second item"))
+    ContentView()
 }
