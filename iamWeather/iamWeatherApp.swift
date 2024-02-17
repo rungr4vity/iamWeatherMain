@@ -11,7 +11,12 @@ import SwiftUI
 struct iamWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            NavigationView {
+                ContentView()
+                    .navigationBarHidden(true)
+            }
+            
         }
     }
 }
