@@ -22,22 +22,9 @@ struct HomeView: View {
                 
         
             VStack{
-                HStack{
-                    CircleButton(iconName: showPortfolio ? "plus" : "info")
-                    Spacer()
-                    Text(showPortfolio ? "Portfolio" : "Live prices")
-                        .fontWeight(.bold)
-                    Spacer()
-                    CircleButton(iconName: "chevron.right")
-                        .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
-                        .onTapGesture {
-                            withAnimation(.spring()){
-                                showPortfolio.toggle()
-                            }
-                        }
-                }
                 
-                .padding(.horizontal)
+                homeHeader
+                
                 Spacer(minLength: 0)
             }
         }
@@ -52,4 +39,28 @@ struct HomeView: View {
             .navigationBarHidden(true)
     }
     
+}
+
+
+extension HomeView {
+    private var homeHeader: some View {
+        HStack{
+            CircleButton(iconName: showPortfolio ? "plus" : "info")
+                .background(
+                    CircleButtonAnimation(animate: $showPortfolio)
+                )
+            Spacer()
+            Text(showPortfolio ? "Portfolio" : "Live prices")
+                .fontWeight(.bold)
+            Spacer()
+            CircleButton(iconName: "chevron.right")
+                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
+                .onTapGesture {
+                    withAnimation(.spring()){
+                        showPortfolio.toggle()
+                    }
+                }
+        }
+        .padding(.horizontal)
+    }
 }

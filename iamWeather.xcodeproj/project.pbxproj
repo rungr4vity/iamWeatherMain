@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B74C00D42B82B0A100A27610 /* CircleButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C00D32B82B0A100A27610 /* CircleButtonAnimation.swift */; };
 		B75ED82B2B80862600D56210 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED82A2B80862600D56210 /* HomeView.swift */; };
 		B7978A552B7F461800AA6D96 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7978A542B7F461800AA6D96 /* CircleButton.swift */; };
 		B7B7156F2B2E607B001BAE25 /* iamWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7156E2B2E607B001BAE25 /* iamWeatherApp.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B74C00D32B82B0A100A27610 /* CircleButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimation.swift; sourceTree = "<group>"; };
 		B75ED82A2B80862600D56210 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B7978A542B7F461800AA6D96 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		B7B7156B2B2E607B001BAE25 /* iamWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iamWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				B7978A542B7F461800AA6D96 /* CircleButton.swift */,
+				B74C00D32B82B0A100A27610 /* CircleButtonAnimation.swift */,
 			);
 			path = CircleButton;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				B7978A552B7F461800AA6D96 /* CircleButton.swift in Sources */,
 				B75ED82B2B80862600D56210 /* HomeView.swift in Sources */,
+				B74C00D42B82B0A100A27610 /* CircleButtonAnimation.swift in Sources */,
 				B7B715712B2E607B001BAE25 /* ContentView.swift in Sources */,
 				B7B7156F2B2E607B001BAE25 /* iamWeatherApp.swift in Sources */,
 			);
