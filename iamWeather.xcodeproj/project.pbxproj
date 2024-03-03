@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71648472B871C9D0014157F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71648462B871C9D0014157F /* Double.swift */; };
 		B74C00D42B82B0A100A27610 /* CircleButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C00D32B82B0A100A27610 /* CircleButtonAnimation.swift */; };
 		B75ED82B2B80862600D56210 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75ED82A2B80862600D56210 /* HomeView.swift */; };
 		B78A2C9A2B845FFF009F9B13 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A2C992B845FFF009F9B13 /* CoinModel.swift */; };
 		B7978A552B7F461800AA6D96 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7978A542B7F461800AA6D96 /* CircleButton.swift */; };
+		B7ABF27F2B950235007936C5 /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF27E2B950235007936C5 /* CoinsViewModel.swift */; };
 		B7B7156F2B2E607B001BAE25 /* iamWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7156E2B2E607B001BAE25 /* iamWeatherApp.swift */; };
 		B7B715712B2E607B001BAE25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B715702B2E607B001BAE25 /* ContentView.swift */; };
 		B7B715732B2E607C001BAE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B715722B2E607C001BAE25 /* Assets.xcassets */; };
 		B7B715762B2E607C001BAE25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B715752B2E607C001BAE25 /* Preview Assets.xcassets */; };
+		B7CE7C432B85C05200D19C56 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CE7C422B85C05200D19C56 /* CoinRowView.swift */; };
+		B7CE7C472B85C0DA00D19C56 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CE7C462B85C0DA00D19C56 /* PreviewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B71648462B871C9D0014157F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		B74C00D32B82B0A100A27610 /* CircleButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimation.swift; sourceTree = "<group>"; };
 		B75ED82A2B80862600D56210 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B78A2C992B845FFF009F9B13 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		B7978A542B7F461800AA6D96 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		B7ABF27E2B950235007936C5 /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
 		B7B7156B2B2E607B001BAE25 /* iamWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iamWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B7156E2B2E607B001BAE25 /* iamWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iamWeatherApp.swift; sourceTree = "<group>"; };
 		B7B715702B2E607B001BAE25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7B715722B2E607C001BAE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7B715752B2E607C001BAE25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7BE2C6D2B7199470066FA60 /* ilwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ilwork.xcodeproj; path = ../ilwork/ilwork.xcodeproj; sourceTree = "<group>"; };
+		B7CE7C422B85C05200D19C56 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		B7CE7C462B85C0DA00D19C56 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 		B7978A4D2B7F459B00AA6D96 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B7CE7C462B85C0DA00D19C56 /* PreviewProvider.swift */,
+				B71648462B871C9D0014157F /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,6 +112,7 @@
 		B7978A512B7F45CE00AA6D96 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B7ABF27E2B950235007936C5 /* CoinsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				B75ED82A2B80862600D56210 /* HomeView.swift */,
+				B7CE7C422B85C05200D19C56 /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,8 +279,12 @@
 				B7978A552B7F461800AA6D96 /* CircleButton.swift in Sources */,
 				B75ED82B2B80862600D56210 /* HomeView.swift in Sources */,
 				B74C00D42B82B0A100A27610 /* CircleButtonAnimation.swift in Sources */,
+				B7ABF27F2B950235007936C5 /* CoinsViewModel.swift in Sources */,
 				B7B715712B2E607B001BAE25 /* ContentView.swift in Sources */,
 				B78A2C9A2B845FFF009F9B13 /* CoinModel.swift in Sources */,
+				B7CE7C472B85C0DA00D19C56 /* PreviewProvider.swift in Sources */,
+				B7CE7C432B85C05200D19C56 /* CoinRowView.swift in Sources */,
+				B71648472B871C9D0014157F /* Double.swift in Sources */,
 				B7B7156F2B2E607B001BAE25 /* iamWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var showPortfolio: Bool = false
-    
+    @EnvironmentObject private var vm : CoinsViewModel
     
     
     var body: some View {
@@ -22,8 +22,18 @@ struct HomeView: View {
                 
         
             VStack{
-                
                 homeHeader
+                
+                if !showPortfolio {
+                    allCoinsList
+                    .transition(.move(edge: .leading))
+                } else {
+                    PortfolioCoinsList
+                        .transition(.move(edge: .trailing))
+                }
+                
+                
+                
                 
                 Spacer(minLength: 0)
             }
@@ -39,10 +49,25 @@ struct HomeView: View {
             .navigationBarHidden(true)
     }
     
+    
 }
 
 
 extension HomeView {
+    
+    private var allCoinsList: some View {
+        List {
+            CoinRowView(showHoldingsColumn: false)
+        }
+    }
+    
+    private var PortfolioCoinsList: some View {
+        List {
+            CoinRowView(showHoldingsColumn: true)
+        }
+    }
+    
+    
     private var homeHeader: some View {
         HStack{
             CircleButton(iconName: showPortfolio ? "plus" : "info")

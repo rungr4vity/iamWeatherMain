@@ -9,13 +9,19 @@ import SwiftUI
 
 @main
 struct iamWeatherApp: App {
+    
+    @StateObject private var vm = CoinsViewModel()
+
+    
     var body: some Scene {
         WindowGroup {
             
             NavigationView {
                 ContentView()
                     .navigationBarHidden(true)
+                    
             }
+            .environmentObject(vm)
             
         }
     }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct CoinModel:Identifiable,Codable {
         let id, symbol, name: String
@@ -27,6 +28,7 @@ struct CoinModel:Identifiable,Codable {
         enum CodingKeys:String,CodingKey {
             case id,symbol,name,image
             case currentPrice  = "current_price"
+            case marketCap = "market_cap"
             case marketCapRank = "market_cap_rank"
             case fullyDilutedValuation = "fully_diluted_valuation"
             case totalVolume = "total_volume"
